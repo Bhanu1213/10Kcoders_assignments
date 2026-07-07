@@ -1,0 +1,232 @@
+# ================== PYTHON COLLECTIONS NOTES ==================
+
+------------------------------------------------------------
+1. LIST
+------------------------------------------------------------
+
+Definition:
+A List is an ordered and mutable collection that stores multiple values.
+It allows duplicate values and different data types.
+
+Syntax:
+list_name = [value1, value2, value3]
+
+Example:
+```python
+numbers = [10, 20, 30, 40]
+print(numbers)
+```
+
+Output:
+[10, 20, 30, 40]
+
+Features:
+• Ordered
+• Mutable (Can be modified)
+• Allows duplicates
+• Supports indexing and slicing
+
+Common Methods:
+```python
+numbers.append(50)
+numbers.insert(1, 15)
+numbers.remove(20)
+numbers.pop()
+numbers.sort()
+numbers.reverse()
+```
+
+------------------------------------------------------------
+2. NESTED LIST
+------------------------------------------------------------
+
+Definition:
+A Nested List is a list that contains one or more lists as its elements.
+It is mainly used to represent tables, matrices, and student records.
+
+Syntax:
+nested_list = [[...], [...], [...]]
+
+Example:
+```python
+students = [
+    ["Rahul", 20],
+    ["Priya", 21],
+    ["Arun", 22]
+]
+
+print(students)
+print(students[0])
+print(students[0][0])
+```
+
+Output:
+[['Rahul', 20], ['Priya', 21], ['Arun', 22]]
+['Rahul', 20]
+Rahul
+
+Features:
+• List inside another list
+• Uses multiple indexing
+• Mutable
+• Ordered
+
+------------------------------------------------------------
+3. TUPLE
+------------------------------------------------------------
+
+Definition:
+A Tuple is an ordered and immutable collection.
+Once created, its elements cannot be changed.
+
+Syntax:
+tuple_name = (value1, value2, value3)
+
+Example:
+```python
+marks = (80, 85, 90)
+
+print(marks)
+print(marks[1])
+```
+
+Output:
+(80, 85, 90)
+85
+
+Features:
+• Ordered
+• Immutable
+• Allows duplicates
+• Supports indexing
+
+Common Methods:
+```python
+marks.count(85)
+marks.index(90)
+len(marks)
+```
+
+------------------------------------------------------------
+4. SET
+------------------------------------------------------------
+
+Definition:
+A Set is an unordered collection of unique elements.
+Duplicate values are automatically removed.
+
+Syntax:
+set_name = {value1, value2, value3}
+
+Example:
+```python
+numbers = {10, 20, 30, 20}
+print(numbers)
+```
+
+Output:
+{10, 20, 30}
+
+Features:
+• Unordered
+• Mutable
+• No duplicate values
+• No indexing
+
+Common Methods:
+```python
+numbers.add(40)
+numbers.remove(20)
+numbers.discard(50)
+```
+
+Set Operations:
+```python
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)
+print(A & B)
+print(A - B)
+print(A ^ B)
+```
+
+------------------------------------------------------------
+5. DICTIONARY
+------------------------------------------------------------
+
+Definition:
+A Dictionary stores data in key-value pairs.
+Each key must be unique.
+
+Syntax:
+dict_name = {
+    key1: value1,
+    key2: value2
+}
+
+Example:
+```python
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 90
+}
+
+print(student)
+print(student["name"])
+```
+
+Output:
+{'name': 'Rahul', 'age': 20, 'marks': 90}
+Rahul
+
+Features:
+• Stores key-value pairs
+• Mutable
+• Keys must be unique
+• Access values using keys
+
+Common Methods:
+```python
+student["age"] = 21
+student["city"] = "Hyderabad"
+
+student.pop("marks")
+
+print(student.keys())
+print(student.values())
+print(student.items())
+```
+
+------------------------------------------------------------
+DIFFERENCE BETWEEN LIST, TUPLE, SET, DICTIONARY
+------------------------------------------------------------
+
+List
+• Symbol : []
+• Ordered : Yes
+• Mutable : Yes
+• Duplicates : Yes
+• Indexing : Yes
+
+Tuple
+• Symbol : ()
+• Ordered : Yes
+• Mutable : No
+• Duplicates : Yes
+• Indexing : Yes
+
+Set
+• Symbol : {}
+• Ordered : No
+• Mutable : Yes
+• Duplicates : No
+• Indexing : No
+
+Dictionary
+• Symbol : {key:value}
+• Ordered : Yes
+• Mutable : Yes
+• Duplicate Keys : No
+• Access : Using Keys
