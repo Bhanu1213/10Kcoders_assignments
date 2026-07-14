@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .menu-card {
+    background: #fff;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 0px #333;
+  }
+
+  .menu-header {
+    text-align: center;
+    border-bottom: 2px double #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .menu-header h2 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+
+  .menu-header p {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+
+  .item-name {
+    font-weight: bold;
+    background-color: #fff;
+    padding-right: 5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .item-price {
+    font-weight: bold;
+    background-color: #fff;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap; /* Prevents ₹ symbol from breaking line */
+  }
+
+  .menu-item::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px dotted #333;
+    margin: 0 5px;
+    position: relative;
+    top: -5px;
+    z-index: 0;
+  }
+
+  .menu-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-card">
+  <div class="menu-header">
+    <h2>Simple Eats</h2>
+    <p>Daily Specials</p>
+  </div>
+
+  <ul class="menu-list">
+    <li class="menu-item">
+      <span class="item-name">1. Grilled Cheese</span>
+      <span class="item-price">₹400</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">2. Tomato Soup</span>
+      <span class="item-price">₹350</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">3. Caesar Salad</span>
+      <span class="item-price">₹550</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">4. Cheeseburger</span>
+      <span class="item-price">₹700</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">5. Fish & Chips</span>
+      <span class="item-price">₹850</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">6. Chicken Wrap</span>
+      <span class="item-price">₹650</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">7. Veggie Burrito</span>
+      <span class="item-price">₹750</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">8. Onion Rings</span>
+      <span class="item-price">₹300</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">9. Brownie Sundae</span>
+      <span class="item-price">₹450</span>
+    </li>
+    <li class="menu-item">
+      <span class="item-name">10. Fresh Lemonade</span>
+      <span class="item-price">₹250</span>
+    </li>
+  </ul>
+
+  <div class="menu-footer">
+    * Tax not included • Tips appreciated
+  </div>
+</div>
+
+</body>
+</html>
