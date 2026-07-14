@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds with Iframes</title>
+    <style>
+        .media-container {
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .media-section {
+            margin-bottom: 30px;
+        }
+        .media-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        iframe {
+            width: 100%;
+            height: 315px; /* Standard video height */
+            border: none;
+        }
+        /* Specific adjustments for audio if using an iframe wrapper */
+        .audio-iframe {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="media-container">
+    <h1>Website Media Integration</h1>
+
+    <!-- 1. Image Embed (Using an image host like Flickr or Imgur via Iframe) -->
+    <div class="media-section">
+        <div class="media-title">1. Embedded Image (via Iframe)</div>
+        <!-- Note: Most direct images use <img>, but iframes are used for image galleries/slideshows hosted elsewhere -->
+        <iframe src="https://unsplash.com/photos/waterfall-nature-landscape-1170km7cfMA/embed?sig=abc123" 
+                title="Nature Image" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- 2. Audio Embed (e.g., SoundCloud or Spotify) -->
+    <div class="media-section">
+        <div class="media-title">2. Embedded Audio Player</div>
+        <!-- Example: SoundCloud Embed -->
+        <iframe class="audio-iframe" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" 
+                title="Audio Player">
+        </iframe>
+    </div>
+
+    <!-- 3. Video Embed (e.g., YouTube) -->
+    <div class="media-section">
+        <div class="media-title">3. Embedded Video</div>
+        <!-- Example: YouTube Video -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube Video Player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- 4. "10k Coders" Event/Stream Embed -->
+    <div class="media-section">
+        <div class="media-title">4. Live Coder Stream (10k Coders)</div>
+        <!-- Note: Replace this URL with the actual Twitch or YouTube Live link for the "10k Coders" event -->
+        <iframe src="https://www.twitch.tv/embed/twitchtv?parent=localhost" 
+                title="Live Coder Stream" 
+                allowfullscreen>
+        </iframe>
+        <p><small>Replace the 'src' URL above with the specific embed link for the 10k Coders event.</small></p>
+    </div>
+</div>
+
+</body>
+</html>
