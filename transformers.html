@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Gallery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f6ead8;
+}
+
+.container{
+    position:relative;
+    width:900px;
+    height:700px;
+}
+
+.diamond{
+    position:absolute;
+    width:180px;
+    height:180px;
+    overflow:hidden;
+    transform:rotate(45deg);
+    border-radius:18px;
+    border:5px solid #d9a75d;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.diamond:hover{
+    transform:rotate(45deg) scale(1.08);
+}
+
+.diamond img{
+    width:150%;
+    height:150%;
+    object-fit:cover;
+    transform:rotate(-45deg) translate(-15%,-15%);
+}
+
+.one{
+    top:70px;
+    left:120px;
+}
+
+.two{
+    top:70px;
+    right:120px;
+}
+
+.center{
+    width:250px;
+    height:250px;
+    top:220px;
+    left:325px;
+}
+
+.three{
+    bottom:70px;
+    left:120px;
+}
+
+.four{
+    bottom:70px;
+    right:120px;
+}
+
+.icon{
+    position:absolute;
+    font-size:70px;
+    opacity:.08;
+    color:#8d5f28;
+    user-select:none;
+}
+
+.icon1{
+    top:20px;
+    left:420px;
+}
+
+.icon2{
+    top:250px;
+    left:40px;
+}
+
+.icon3{
+    top:250px;
+    right:40px;
+}
+
+.icon4{
+    bottom:10px;
+    left:420px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="icon icon1">👨‍🍳</div>
+<div class="icon icon2">🍕</div>
+<div class="icon icon3">🍽️</div>
+<div class="icon icon4">🥘</div>
+
+<div class="diamond one">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800" alt="">
+</div>
+
+<div class="diamond two">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" alt="">
+</div>
+
+<div class="diamond center">
+<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1000" alt="">
+</div>
+
+<div class="diamond three">
+<img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800" alt="">
+</div>
+
+<div class="diamond four">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="">
+</div>
+
+</div>
+
+</body>
+</html>
